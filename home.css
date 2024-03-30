@@ -1,0 +1,213 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+.nav-bar{
+    display: flex;
+}
+#container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.nav-bar #container ul li{
+    display: inline;
+    padding: 10px;
+}
+.nav-bar #container ul{
+    justify-content: space-around;
+}
+.nav-bar #container ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin: 10px;
+}
+.register{
+    border-radius: 2px;
+    background: linear-gradient(to right,yellow ,rgb(255, 0, 60) 65%);
+    
+}
+#content{
+    height: 550px;
+    display:flex;
+}
+.topic{
+    animation-name: slide-from-left;
+    animation-duration: 0.5s;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    margin-left:50px;
+    margin-top: 150px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blueviolet;
+    background: linear-gradient(to left,yellow 70% ,rgb(255, 0, 60));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 0px;
+}
+#sub-topic{
+    animation-name: scale-up;
+    animation-duration: 0.5s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 0ms;
+    color: white;
+    letter-spacing: 10px;
+    margin:2px 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    font-size: 30px;
+}
+#summary{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    font-size: 25px;padding-top: 40px;
+
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+}
+#register-now{
+    background: linear-gradient(to left,yellow,rgb(255, 0, 60));
+    height: 50px;
+    width: 160px;
+    border-radius: 5px;
+    margin: 100px 40px;
+    justify-content: center;
+}
+#register-now p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top:12px;
+}
+#agen{
+    width: 60%;
+}
+
+#agen h3{
+    color: white;
+    margin-left: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+#agen p{
+    color: rgb(239, 234, 234);
+    margin: 10px 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    text-align: left;
+    line-height: 35px;
+}
+#benefits{
+    background-color: rgb(9, 9, 9);
+    display: flex;
+    margin-top: 190px;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+}
+#benefits a{
+    margin-top: 20px;
+    margin-left: 40px;
+    text-decoration: none;
+    color: rgb(14, 255, 227);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#benefits img{
+    margin-left:150px;
+    width: auto;
+    height: 600px;
+}
+#why{
+    padding: 40px;
+}
+#why h2{
+    color: #fff;
+    margin-top: 180px;
+    margin-left: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#why li{
+    color: white;
+    margin-left: 50px;
+    justify-content: center;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 26px;
+}
+#agenda{
+    padding: 40px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#agenda ul{
+    list-style-type:circle;
+}
+#agenda h2{
+    font-size: medium;
+}
+footer{
+    margin: 0;
+    padding: 40px;
+    height: 50px;
+    color: grey;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: #201f1f;
+}
+
+@keyframes slide-from-left {
+    from{
+        opacity: 0%;
+        margin-left: 500px;
+    }
+    to{
+        opacity: 100%;
+        margin-left: 40px;
+    }
+}
+@keyframes scale-up {
+    from{
+        opacity: 0%;
+        scale: 1.3;
+    }
+    to{
+        opacity: 100%;
+        scale: 1;
+    }
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
